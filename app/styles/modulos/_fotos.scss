@@ -1,0 +1,23 @@
+/**
+ * Estilos de fotos
+ */
+
+.skew {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  //background-position: center center;
+  background-attachment: fixed;
+  &--left {
+    transform: skewY(2deg);
+  }
+  &--right {
+    transform: skewY(-2deg);
+  }
+  &--first{
+    background-image: url('../images/skew1.jpg');
+  }
+  &--second{
+    background-image: url('../images/skew2.jpg');
+  }
+}

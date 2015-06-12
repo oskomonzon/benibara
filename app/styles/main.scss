@@ -1,0 +1,24 @@
+// bower:scss
+@import "bower_components/include-media/dist/_include-media.scss";
+// endbower
+
+// Configraciones
+$max-width: 1140px;
+
+// Elementos
+// Módulos
+@import 'modulos/hero';
+@import 'modulos/seccion';
+@import 'modulos/servicio';
+@import 'modulos/fotos';
+@import 'modulos/footer';
+@import 'modulos/contacto';
+
+body {
+  //lost-utility: edit;
+  background: #fafafa;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  color: #333;
+  position: relative;
+}
+

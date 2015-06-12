@@ -1,0 +1,23 @@
+/**
+ * Secciones
+ */
+
+.seccion {
+  lost-center: $max-width;
+  margin: 150px auto;
+  text-align: justify;
+  &__titulo {
+    text-align: center;
+    color: deeppink;
+    font-size: 3rem;
+    line-height: 3.25rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+  }
+  &__cuerpo {
+    lost-utility: clearfix;
+    @include media('<desktop') {
+      padding: 0 15px;
+    }
+  }
+}

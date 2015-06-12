@@ -1,0 +1,67 @@
+/**
+ * Hero Header
+ */
+
+.hero {
+  lost-utility: clearfix;
+  height: 600px;
+  position: relative;
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-image: linear-gradient(transparent 30%, transparentize(black,.2) 100%);
+  }
+  &__heading {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    z-index: 2;
+  }
+  &__titulo,
+  &__subtitulo{
+    font-weight: 200;
+    text-align: center;
+    color: #fff;
+  }
+  &__titulo {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    position: relative;
+    letter-spacing: 5px;
+    margin-bottom: .5rem;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 250px;
+      margin-left: -125px;
+      left: 50%;
+      border-bottom: 1px solid white;
+    }
+  }
+  &__subtitulo {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  &__rose {
+    background-image: url('../images/rose.png');
+    height: 60%;
+    width: 100%;
+    background-position: 80% bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -15%;
+    z-index: 1;
+  }
+}
