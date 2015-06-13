@@ -27,6 +27,7 @@
     bottom: 10px;
     width: 100%;
     z-index: 2;
+    transform: scale3d(.75,.75,1);
   }
   &__titulo,
   &__subtitulo{
