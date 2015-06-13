@@ -21,3 +21,17 @@ $(window).scroll(function(){
     $('.hero__heading').css('transform','translate3d(0,-'+position/20+'%,0) scale3d('+scale+','+scale+',1)');
   }
 });
+
+// Smooth Scroll
+$('a[href*=#]:not([href=#])').click(function () {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top - 150
+      }, 1000);
+      return false;
+    }
+  }
+});
