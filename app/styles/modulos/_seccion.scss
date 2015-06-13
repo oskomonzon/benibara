@@ -6,6 +6,9 @@
   lost-center: $max-width;
   margin: 150px auto;
   text-align: justify;
+  &:last-of-type {
+    margin-bottom: 50px;
+  }
   &__titulo {
     text-align: center;
     color: deeppink;

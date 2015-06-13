@@ -21,3 +21,13 @@
     background-image: url('../images/skew2.jpg');
   }
 }
+
+.petalos {
+  height: 30vh;
+  width: 100%;
+  background-image: url(../images/rosaypetalos.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+}
