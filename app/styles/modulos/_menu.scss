@@ -57,8 +57,8 @@
   &__link {
     font-size: .8rem;
     position: relative;
-    @include media('>=tablet') {
-      font-size: 1.2rem;
+    @include media('>=desktop') {
+      font-size: 1.1rem;
     }
     &:after {
       content: ' ';
